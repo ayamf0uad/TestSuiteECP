@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="166.82">
+<testcase classname="user can add different products to cart" name="Logged user could compare products" time="19.961">
+<system-out><![CDATA[When User navigates to login page...........................................passed
+And User enters a valid "test@email.com" and "P@ssw0rd".....................passed
+And User clicks on login....................................................passed
+Then User should login successfully.........................................passed
+When the user has navigated to a category page: "https://demo.nopcommerce.com/books".passed
+And user clicks on add to comparlist button of products.....................passed
+Then user is shown an add comparlist success notification...................passed
+And clicking on success bar's link navigates user to compare page...........passed
+]]></system-out>
+</testcase>
+<testcase classname="User can change currency for us to euro" name="Logged User could switch between currencies US-Euro" time="12.597">
+<system-out><![CDATA[When Logged in user clicks on currency dropdown list........................passed
+And user selects another currency...........................................passed
+Then products' prices should change to this currency........................passed
+]]></system-out>
+</testcase>
+<testcase classname="User should be able to filter listings by color" name="Logged user could filter with color" time="16.524">
+<system-out><![CDATA[When User navigates to login page...........................................passed
+And User enters a valid "test@email.com" and "P@ssw0rd".....................passed
+And User clicks on login....................................................passed
+Then User should login successfully.........................................passed
+When that the user has navigated to a PLP page with color filter available..passed
+And user selects a color....................................................passed
+Then listings are filtered to only show products with this color............passed
+]]></system-out>
+</testcase>
+<testcase classname="User can forget password" name="User is able to reset password successfully" time="11.742">
+<system-out><![CDATA[When User navigates to login page...........................................passed
+And User Clicks on forget password..........................................passed
+And enter "test@email.com" and clicks on recover............................passed
+Then User is shown a success message........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Can login successfully" name="User could log in with valid email and password" time="13.733">
+<system-out><![CDATA[Given User navigates to login page..........................................passed
+When User enters a valid "test@email.com" and "P@ssw0rd"....................passed
+And User clicks on login....................................................passed
+Then User should login successfully.........................................passed
+And Navigates to HP.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could register with valid data" name="User registering with valid data" time="19.885">
+<system-out><![CDATA[And User navigates to registration page.....................................passed
+When User enters valid credentials 'Aya' and "Fouad" and "supernewemail@test.com" and "password" and "password".passed
+And User clicks register button.............................................passed
+Then User can register successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User actions" name="Logged User could search for any product" time="9.858">
+<system-out><![CDATA[When Logged in user type a search keyword "book"............................passed
+And User clicks on search...................................................passed
+Then User should be navigated to search result page for "book"..............passed
+And Search results contains search keyword "book"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="filter by tag" name="Logged user could select different tags" time="17.359">
+<system-out><![CDATA[Given User navigates to login page..........................................passed
+And User enters a valid "test@email.com" and "P@ssw0rd".....................passed
+And User clicks on login....................................................passed
+Then User should login successfully.........................................passed
+When user navigates to a product listing page and filter by tags............passed
+And user clicks on another tag..............................................passed
+Then user is navigated to the related page of this tag......................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can switch between categories" name="Logged user could select different Categories" time="26.86">
+<system-out><![CDATA[When User navigates to login page...........................................passed
+And User enters a valid "test@email.com" and "P@ssw0rd".....................passed
+And User clicks on login....................................................passed
+Then User should login successfully.........................................passed
+When user hovers over a category from nav menu..............................passed
+Then user should be navigated to this new subcategory.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can add different products to cart" name="Logged user could add different products to wishlist" time="18.159">
+<system-out><![CDATA[When User navigates to login page...........................................passed
+And User enters a valid "test@email.com" and "P@ssw0rd".....................passed
+And User clicks on login....................................................passed
+Then User should login successfully.........................................passed
+When the user has navigated to a category page: "https://demo.nopcommerce.com/books".passed
+And user clicks on add to wishlist button of products.......................passed
+Then user is shown an add wishlist success notification.....................passed
+And clicking on success bar's link navigates user to wishlist page..........passed
+]]></system-out>
+</testcase>
+</testsuite>
